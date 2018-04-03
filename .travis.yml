@@ -4,8 +4,6 @@ branches:
   only:
   - pages
 cache:
-  apt: true
-  yarn: true
   directories:
   - node_modules
 before_install:
@@ -15,6 +13,10 @@ install:
 script:
 - hexo clean
 - hexo generate
+- pwd
+- ls -al
+- ls -al ./public/
+- cat ./public/index.html
 after_success:
 - cd ./public
 - git init
