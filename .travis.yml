@@ -7,14 +7,13 @@ cache:
   directories:
   - node_modules
 before_install:
-- git clone https://github.com/iissnan/hexo-theme-next ./themes/next 
+- git clone https://github.com/theme-next/hexo-theme-next.git ./themes/next 
 - npm install -g hexo-cli
 install:
 - npm install
 script:
 - hexo clean
 - hexo generate
-- cat ./public/index.html
 after_success:
 - cd ./public
 - git init
