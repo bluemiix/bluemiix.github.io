@@ -6,3 +6,12 @@
 ## live  
 [notes](https://bluemiix.github.io)  
 
+## how  
+
+```sh
+# write markdown post
+$ git add .  
+$ git commit -m 'xxx'  
+$ git push origin pages
+```
+
